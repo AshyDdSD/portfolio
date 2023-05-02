@@ -1,0 +1,717 @@
+/* @font-face{
+  font-family: 'Moon2.0-bold';
+  src: url(./fontes/Moon2.0-Bold.otf);
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    width: 10px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #ee4242;    /* цвет плашки */
+    border-radius: 20px;       /*закругления плашки*/
+    border: 2px solid #ffffff;  /* padding вокруг плашки */
+  }
+
+#ash{
+  color: #2897f4;
+}
+#ed{
+  color: #ee4242;
+}
+.textin{
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.hero {
+  overflow: hidden;
+  position: absolute;
+  scroll-behavior: smooth;
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#back-img{
+  height: 861px;
+  width: 100%;
+}
+nav {
+  position: absolute;
+  top: 20px;
+  right: -4%;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.cabeca-link{
+  display: inline;
+  font-weight: 300;
+  cursor: pointer;  
+}
+
+.cabeca-link a{
+  margin-left: -10px;
+  color: #fff;
+  font-size: 18px;
+}
+#bt-contato{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  top: -190px;
+  margin-left: 30px;
+}
+.cabeca-link a:hover{
+  color:  #ee4242;
+  transition: 0.3s all;
+}
+
+/* Efeito glitch início */
+.glitch {
+  top: 90px;
+  left: 100px;
+  font-size: 35px;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -2px 0 #ee4242;
+  top: 0;
+  color: white;
+  /*usar a cor de fundo solido*/
+  background: #090909;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch1 2s infinite linear alternate-reverse;
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 #2897f4;
+  top: 0;
+  color: white;
+   /*usar a cor de fundo solido*/
+  background: #090909;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch2 3s infinite linear alternate-reverse;
+}
+@keyframes glitch1 {
+  0% {
+    clip: rect(59px, 9999px, 84px, 0);
+  }
+  5% {
+    clip: rect(46px, 9999px, 36px, 0);
+  }
+  10% {
+    clip: rect(72px, 9999px, 84px, 0);
+  }
+  15% {
+    clip: rect(58px, 9999px, 43px, 0);
+  }
+  20% {
+    clip: rect(34px, 9999px, 62px, 0);
+  }
+  25% {
+    clip: rect(63px, 9999px, 84px, 0);
+  }
+  30% {
+    clip: rect(59px, 9999px, 73px, 0);
+  }
+  35% {
+    clip: rect(15px, 9999px, 44px, 0);
+  }
+  40% {
+    clip: rect(7px, 9999px, 81px, 0);
+  }
+  45% {
+    clip: rect(63px, 9999px, 35px, 0);
+  }
+  50% {
+    clip: rect(61px, 9999px, 98px, 0);
+  }
+  55% {
+    clip: rect(8px, 9999px, 41px, 0);
+  }
+  60% {
+    clip: rect(29px, 9999px, 32px, 0);
+  }
+  65% {
+    clip: rect(7px, 9999px, 55px, 0);
+  }
+  70% {
+    clip: rect(36px, 9999px, 60px, 0);
+  }
+  75% {
+    clip: rect(75px, 9999px, 83px, 0);
+  }
+  80% {
+    clip: rect(100px, 9999px, 16px, 0);
+  }
+  85% {
+    clip: rect(47px, 9999px, 22px, 0);
+  }
+  90% {
+    clip: rect(8px, 9999px, 45px, 0);
+  }
+  95% {
+    clip: rect(0, 900px, 0, 0);
+  }
+  100% {
+    clip: rect(0, 900px, 0, 0);
+  }
+}
+@keyframes glitch2 {
+  0% {
+    clip: rect(7px, 9999px, 60px, 0);
+  }
+  5% {
+    clip: rect(3px, 9999px, 30px, 0);
+  }
+  10% {
+    clip: rect(75px, 9999px, 95px, 0);
+  }
+  15% {
+    clip: rect(30px, 9999px, 70px, 0);
+  }
+  20% {
+    clip: rect(58px, 9999px, 27px, 0);
+  }
+  25% {
+    clip: rect(67px, 9999px, 80px, 0);
+  }
+  30% {
+    clip: rect(36px, 9999px, 12px, 0);
+  }
+  35% {
+    clip: rect(98px, 9999px, 81px, 0);
+  }
+  40% {
+    clip: rect(99px, 9999px, 91px, 0);
+  }
+  45% {
+    clip: rect(88px, 9999px, 24px, 0);
+  }
+  50% {
+    clip: rect(62px, 9999px, 57px, 0);
+  }
+  55% {
+    clip: rect(17px, 9999px, 82px, 0);
+  }
+  60% {
+    clip: rect(17px, 9999px, 29px, 0);
+  }
+  65% {
+    clip: rect(80px, 9999px, 62px, 0);
+  }
+  70% {
+    clip: rect(35px, 9999px, 40px, 0);
+  }
+  75% {
+    clip: rect(43px, 9999px, 85px, 0);
+  }
+  80% {
+    clip: rect(55px, 9999px, 95px, 0);
+  }
+  85% {
+    clip: rect(67px, 9999px, 58px, 0);
+  }
+  90% {
+    clip: rect(8px, 9999px, 45px, 0);
+  }
+  95% {
+    clip: rect(0, 900px, 0, 0);
+  }
+  100% {
+    clip: rect(0, 900px, 0, 0);
+  }
+}
+/* Efeito glitch final */
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  color: #ee4242;
+  transition: 0.4s;
+}
+.btn {
+  background-color: #ee4242;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.3s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+/* h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+} */
+h4 {
+  color: #aaaaaa;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.newslatter form {
+  /* width: 380px; */
+  width: 280px;
+  max-width: 100%;
+  position: relative;
+}
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #ee4242;
+  outline: none;
+  border-radius: 30px;
+}
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #ee4242;
+  color: white;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  top: 6px;
+  right: -140px;
+}
+.newslatter form input:hover:last-child {
+  transition: 0.1;
+  transform: scale(1.05);
+  background-color: #000;
+}
+.about {
+  position: absolute;
+  margin-top: 800px;
+  width: 100%;
+  height: 1000px;
+  padding: 100px 0px;
+  background-color: #191919; 
+  /* É aqui */
+}
+.main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* Sobre nós inicia */
+
+  .container{
+    margin-top: -90px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+#title-sobre{
+    font-size: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.cardoso-card-1{
+    width: 300px;
+    height: 430px;
+    margin-top: 200px;
+    position: absolute;
+    margin-left: -30%;
+    background-color: #414141;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+.cardoso-card-2{
+  width: 300px;
+  height: 430px;
+  margin-top: 200px;
+  position: absolute;
+  margin-right: -30%;
+  background-color: #414141;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
+.card-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-pessoa{
+  margin-top: -10px;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.card-img{
+    position: relative;
+    left: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.card-body{
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+.card-titulo1{
+  text-align: center;
+  color: #2897f4;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.card-titulo2{
+    text-align: center;
+    color: #ee4242;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.card-texto{
+  font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+.card-footer1{
+  margin-top: -12px;
+  text-align: center;
+  background-color: #2897f4;
+}
+.card-footer2{
+    margin-top: -12px;
+    text-align: center;
+    background-color: #ee4242;
+}
+.card-footer1 a{
+    color: #fff;
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.card-footer2 a{
+  color: #fff;
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/* Sobre nós termina */
+
+button {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #ee4242;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid #ee4242;
+  cursor: pointer;
+}
+.service {
+  position: absolute;
+  margin-top: 1570px;
+  background-color: #101010;
+  width: 100%;
+  padding: 100px 0px;
+}
+.title h2 {
+  color: white;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card {
+  /* height: 365px; */
+  height: 405px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #ee4242;
+}
+h5 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p {
+  color: #aaaaaa;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.card .button {
+  background-color: #ee4242;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.card .button:hover {
+  background-color: transparent;
+  border: 2px solid #ee4242;
+  cursor: pointer;
+}
+
+.contact-me {
+  position: absolute;
+  margin-top: 2378px;
+  width: 100%;
+  height: 800px;
+  background: #191919;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#conta-title{
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  margin-top: -500px;
+  position: absolute;
+}
+/* Começo do form */
+
+.form-contato{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+  align-items: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#contato{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 11%;
+  margin-top: -60px;
+  float: left;
+  width: 1001px;
+  height: 545px;
+}
+.input-container{
+  border: none;
+  position: relative;
+  margin: 60px 0;
+}
+.input-container #inputs{
+  background: transparent;
+  width: 55rem;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid white;
+  transition: all 1s ease-in-out;
+}
+.input-container #msg{
+  background: transparent;
+  width: 55rem;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid white;
+  transition: all 1s ease-in-out;
+}
+.input-container #inputs:focus, .input-container #inputs:valid{
+  background: transparent;
+  border-bottom: 5px solid transparent;
+}
+.input-container label{
+  position: absolute;
+  left: 1px;
+  bottom: 10px;
+  color: white;
+  font-size: 18px;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+}
+.input-container #msg-lab{
+  position: absolute;
+  left: 1px;
+  bottom: 10px;
+  color: white;
+  font-size: 18px;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+}
+.input-container #inputs:focus ~ label, .input-container #inputs:valid ~ label{
+  transform: translateY(-35px);
+}
+.input-container #msg:focus ~ label, .input-container #msg:valid ~ label{
+  transform: translateY(-35px);
+}
+#enviar-form{
+  margin-top: 450px;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  position: absolute;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #ee4242;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+#enviar-form:hover {
+  background-color: transparent;
+  border: 2px solid #ee4242;
+  cursor: pointer;
+}
+
+/* final do form */
+
+footer {
+  position: absolute;
+  margin-top: 3140px;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p:nth-child(1) {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2) {
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  line-height: 26px;
+  text-align: center;
+}
+.social {
+  display: flex;
+}
+.social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ee4242;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social a:hover {
+  transform: rotate(360deg) scale(1.3);
+  transition: 0.5s;
+}

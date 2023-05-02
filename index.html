@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio Ashley & Edvan</title>
+  </head>
+  <body>
+    <!-- Hero section start -->
+
+    <div class="hero">
+      <img src="img/background.jpg" id="back-img">
+      <h2 style="color: #fff" class="glitch" data-text="PORTFOLIO">PORTFOLIO</h2>
+      <nav>
+        <div class="cabeca-link">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sobre_nos">Sobre nós</a></li>
+            <li><a href="#trabalhos">Trabalhos</a></li>
+            <a href="#contato"><button id="bt-contato">Contato</button></a>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <h4>Olá, nós somos</h4>
+        <h1><span id="ash">Ashley</span> e <span id="ed">Edvan</span></h1>
+        <div class="textin">nós somos programadores <span id="ash">front-end</span> e <span id="ed">back-end</span></div>
+        <div class="newslatter">
+          <form>
+            <input type="email" name="email" id="mail" placeholder="Insira seu email"/>
+            <input type="submit" name="submit" value="Vamos lá"/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!----- About Section start ---->
+    <section class="about"><a name="sobre_nos"></a>
+      <div class="main">
+        <!--sobre-->
+          <div class="container" id="sobre">
+            <!--heloiza-->
+            <h2 id="title-sobre">Sobre</h2>
+            <div class="cardoso-card-1">
+                <div class="card-header">
+                    <img src="./img/ashy.jpg" class="card-img">
+                </div>
+    
+                <div class="card-body">
+                    <h3 class="card-pessoa">Ashley Duarte</h3>
+                    <h2 class="card-titulo1">Programadora front-end</h2>
+                    <p class="card-texto">Uma profissional ambiciosa</p>
+                </div>
+                <div class="card-footer1">
+                    <a href="./ash/portash.html">Ver mais</a>
+                </div>
+            </div>
+            <!--Eduarda-->
+            <div class="cardoso-card-2">
+                <div class="card-header">
+                    <img src="duda.jpeg" class="card-img">
+                </div>
+    
+                <div class="card-body">
+                    <h3 class="card-pessoa">Edvan da Silva</h3>
+                    <h2 class="card-titulo2">Programador back-end</h2>
+                    <p class="card-texto">Um jovem genial e determinado, um homem proativo e social</p>
+                </div>
+                <div class="card-footer2">
+                    <a href="./ed/ported.html">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      
+      </div>
+    </section>
+
+    <!------- service section start --->
+    <div class="service"><a name="trabalhos"></a>
+      <div class="title">
+        <h2>Nossos trabalhos</h2>
+      </div>
+
+      <div class="box">
+        <div class="card">
+          <i class="fa-solid fa-code"></i>
+          <h5>Programação front-end</h5>
+          <div class="pra">
+            <p>
+              Clique em "Ler mais" caso necessite contratar apenas os serviços de front-end para criação de websites, utilizando de HTML e suas vertentes com velocidade e interatividade completa. 
+            </p>
+            <p style="text-align: center">
+              <a class="button" href="./ash/portash.html">Ler mais</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-database"></i>
+          <h5>Programação back-end</h5>
+          <div class="pra">
+            <p>
+              Clique em "Ler mais" caso necessite contratar apenas os serviços de back-end para criação de websites e aplicações diversas, utilizando PHP, Python e outros. Também trabalhamos com Banco de Dados, com SQLite.
+            </p>
+            <p style="text-align: center">
+              <a class="button" href="./ed/ported.html">Ler mais</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-computer"></i>
+          <h5>Programação full-stack</h5>
+          <div class="pra">
+            <p>
+              Clique em "Contate-nos" caso necessite contratar nossos serviços completos de front-end e back-end (full-stack), para desenvolvimento completo de websites e aplicativos.
+            </p>
+            <p style="text-align: center">
+              <a class="button" href="#contato">Contate-nos</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Contact me start ------ -->
+    <div class="contact-me"><a name="contato"></a>
+      <h2 id="conta-title">Contate-nos para mais informações</h2>
+      <div class="form-contato">
+        <div id="contato">
+            <form class="" method="post">
+                <div class="input-container">
+                    <input type="text" id="inputs" name="nome" autocomplete="off" required>
+                    <label for="nome">* Nome/ Sobrenome</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" id="inputs" name="email" autocomplete="off" required>
+                    <label for="email">* Email</label>
+                </div>
+                <div class="input-container">
+                    <textarea name="msg" id="msg"></textarea>
+                    <label for="msg" id="msg-lab">* Mensagem</label>
+                </div>
+            </form>
+        </div>
+        <button id="enviar-form">Enviar</button>
+    </div>
+    </div>
+
+    <!--------- footer start ------->
+    <footer>
+      <p>Ashley e Edvan</p>
+      <p>
+        Contate-nos caso queira contratar um serviço full-stack de desenvolvimento web
+      </p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
